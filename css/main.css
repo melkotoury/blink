@@ -1,7 +1,12 @@
 /**********************************************************************************************
 
+    0-fonts
     1-Before Navigation
     2-Navigation Menu
+    3-Carousel
+    4-About Section
+    5-Fun Facts
+    21-Media Queries
 
 
 
@@ -11,6 +16,25 @@
 ***************************************************************************************************/
 
 
+/**********************************************************************************************
+
+    0-Fonts
+
+***************************************************************************************************/
+
+@font-face {
+    font-family: "OpenSans-Bold";
+    src: url('../fonts/OpenSans/OpenSans-Bold.ttf') format('truetype');
+}
+@font-face {
+    font-family: "montserrat-Bold";
+    src: url('../fonts/montserrat/Montserrat-Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: "kaushanScript";
+    src: url('../fonts/kaushan-script/KaushanScript-Regular.woff') format('woff');
+}
 
 /**********************************************************************************************
 
@@ -28,9 +52,13 @@
 
 /**********************************************************************************************
 
-    1-Navigation Menu
+    2-Navigation Menu
 
 ***************************************************************************************************/
+.navbar {
+
+    margin-bottom: 0px;
+}
 .blink-navigation .navbar-brand {
     height: 80px;
 }
@@ -97,4 +125,159 @@
     background: #02abff;
     border-bottom-color: #fff;
     border-top-color: #fff;
+}
+
+/**********************************************************************************************
+
+    3-Carousel
+
+***************************************************************************************************/
+
+.carousel-indicators li {
+    background-color: rgb(2, 171, 255);
+    border: 2px solid #ffffff;
+
+}
+#carousel-example-generic {
+    overflow: hidden;
+    margin: 0 auto;
+    margin-top: 0;
+}
+
+
+#carousel-example-generic .item {
+    height: 560px;
+}
+
+
+#carousel-example-generic img {max-height: 100%;width: 100%;height: 100%;}
+
+.carousel-caption {bottom: 35%;z-index: 5;}
+.carousel-caption > h2{
+    font-weight: bolder;
+    font-size: 3em;
+    font-family: "OpenSans-Bold", Verdana, Tahoma;
+}
+
+.carousel-caption > p{
+    font-weight: bolder;
+    font-size: 1.2em;
+}
+
+/**********************************************************************************************
+
+    4-About Section
+
+***************************************************************************************************/
+
+
+.about{
+    background-color: #fff;
+}
+.about .before-title{
+    font-family: "kaushanScript", Verdana, Tahoma;
+    text-align: center;
+    margin-top: 20px;
+}
+.about .title{
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bolder;
+    font-family: "montserrat-Bold";
+}
+.about .title:after{
+    content:"_______";
+    margin-top:0px;
+    color: #02abff;
+    font-family: sans-serif;
+}
+.about p{text-align: center;margin-top: 10px;}
+.about img{
+    height: 50%;
+    width: 50%;
+    margin-left: 27%;
+}
+
+/**********************************************************************************************
+
+    4-About Section
+
+***************************************************************************************************/
+
+.fun-facts{
+    background-color: #02abff;
+    padding-bottom: 70px;
+    padding-top: 70px;
+}
+
+.fun-fact-all{
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.fun-facts-content{
+}
+
+
+/*.fun-facts-circle*/
+/*{*/
+/*width: 100px;*/
+/*height: 100px;*/
+/*background: white;*/
+/*-moz-border-radius: 50px;*/
+/*-webkit-border-radius: 50px;*/
+/*border-radius: 50px;*/
+/*float:left;*/
+/*margin:5px;*/
+/*}*/
+/*.count*/
+/*{*/
+/*line-height: 100px;*/
+/*color: #02abff;*/
+/*margin-left:30px;*/
+/*font-size:25px;*/
+/*font-family: "montserrat-Bold";*/
+/*}*/
+.count
+{
+    line-height: 100px;
+    color: #ffffff;
+    font-size:25px;
+    font-family: "montserrat-Bold";
+    margin-left: 13%;
+}
+
+.fun-facts-icon{
+    margin-left: 16%;
+}
+.fun-facts-icon > .fa{
+    color: #ffffff;
+    font-size: 34px;
+    line-height: 60px;
+    margin-top: 20px;
+}
+.fun-facts-title1,.fun-facts-title2,.fun-facts-title3,.fun-facts-title4{
+    color: #ffffff;
+    font-family: "montserrat-Bold";
+    /*margin-top: 45%;*/
+}
+.fun-facts-title2{
+    margin-left: 5px;
+}
+.fun-facts-title4{
+    margin-left: 32px;
+}
+
+/**********************************************************************************************
+
+    21-Media Queries
+
+***************************************************************************************************/
+
+@media screen and (max-width: 500px) {
+    .fun-facts-content{margin-left: 25%;}
+    .fun-facts-circle
+    {
+        margin-left:7%;
+    }
 }
