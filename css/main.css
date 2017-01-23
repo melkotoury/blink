@@ -19,7 +19,11 @@
 ***************************************************************************************************/
 
 
-
+.before-navigation{
+    padding: 10px;
+    width: 100%;
+    background-color: #02ABFF;
+}
 
 
 /**********************************************************************************************
@@ -27,15 +31,70 @@
     1-Navigation Menu
 
 ***************************************************************************************************/
-.example3 .navbar-brand {
+.blink-navigation .navbar-brand {
     height: 80px;
 }
 
-.example3 .nav >li >a {
-    padding-top: 30px;
-    padding-bottom: 30px;
+.blink-navigation .navbar-brand>img {
+    width: 100px;
+    padding: 0px;
+    margin: 0px;
+    margin-top: -10px;
 }
-.example3 .navbar-toggle {
+
+.blink-navigation .nav >li >a {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-transform: uppercase;
+    color: #5e5e5e;
+    background-color: #fff;
+    margin-right: 0px;
+    padding-right: 16px;
+}
+.blink-navigation .nav >li >a:after {
+    content: "|";
+    color: #5e5e5e;
+    position: relative;
+    left: 20%;
+}
+.blink-navigation .nav >li:nth-child(5n+5) >a:after{
+    content: "";
+}
+.blink-navigation .nav>li>a:focus,.blink-navigation .nav>li>a:hover,.blink-navigation .nav>li.active>a{
+
+    color: #02ABFF;
+
+
+}
+
+
+.blink-navigation .navbar-search{
+    float: left;
+    padding-top: 4px;
+}
+.blink-navigation .navbar-search .btn{
+    margin-left: 10px;
+}
+
+.blink-navigation .navbar-search .input-group-btn:last-child>.btn{
+    border-radius: 50%;
+    background: #02abff;
+    color: #fff;
+}
+
+.blink-navigation .navbar-search >input[type=text] {
+    width: 120px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+    position: relative;
+    top:10%;
+}
+
+
+.blink-navigation .navbar-toggle {
     padding: 10px;
     margin: 25px 15px 25px 0;
+    background: #02abff;
+    border-bottom-color: #fff;
+    border-top-color: #fff;
 }

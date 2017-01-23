@@ -5,11 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Bootstrap 101 Template</title>
+    <title>Blink|Marketing Solution</title>
 
+    <!--Fav Icon-->
+    <link rel="icon"  type="image/png" href="img/fav.png">
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
+    <!--Font Awesome-->
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+
+    <!--Custom Css-->
+    <link rel="stylesheet" href="css/main.css">
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -18,11 +25,11 @@
     <![endif]-->
 </head>
 <body>
-<div class="before-navigation">Example 3 - Increase entire navbar height</div>
+<div class="before-navigation"></div>
 
 
-<div class="example3">
-    <nav class="navbar navbar-inverse navbar-static-top">
+<div class="blink-navigation">
+    <nav class="navbar navbar navbar-static-top">
         <div class="container">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar3">
@@ -31,26 +38,26 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="http://disputebills.com"><img src="http://res.cloudinary.com/candidbusiness/image/upload/v1455406304/dispute-bills-chicago.png" alt="Dispute Bills">
+                <a class="navbar-brand" href="index.html"><img src="img/logo.png" alt="Blink">
                 </a>
             </div>
             <div id="navbar3" class="navbar-collapse collapse">
                 <ul class="nav navbar-nav navbar-right">
                     <li class="active"><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Contact</a></li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown <span class="caret"></span></a>
-                        <ul class="dropdown-menu" role="menu">
-                            <li><a href="#">Action</a></li>
-                            <li><a href="#">Another action</a></li>
-                            <li><a href="#">Something else here</a></li>
-                            <li class="divider"></li>
-                            <li class="dropdown-header">Nav header</li>
-                            <li><a href="#">Separated link</a></li>
-                            <li><a href="#">One more separated link</a></li>
-                        </ul>
-                    </li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Work</a></li>
+                    <li><a href="">Team</a></li>
+                    <li><a href="">Contact</a></li>
+                    <div class="navbar-search">
+                        <form class="navbar-form" role="search">
+                            <div class="input-group">
+                                <input type="text" class="form-control" placeholder="Search" name="q">
+                                <div class="input-group-btn">
+                                    <button class="btn btn-default" type="submit"><i class="fa fa-search"></i></button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
                 </ul>
             </div>
             <!--/.nav-collapse -->
